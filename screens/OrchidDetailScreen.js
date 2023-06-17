@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 
-function FavoriteDetailScreen() {
+function OrchidDetailScreen() {
   return (
     <View>
       <Text>This is detail screen</Text>
@@ -8,4 +8,4 @@ function FavoriteDetailScreen() {
   );
 }
 
-export default FavoriteDetailScreen;
+export default OrchidDetailScreen;

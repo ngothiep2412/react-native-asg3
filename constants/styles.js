@@ -1,12 +1,12 @@
 export const GlobalStyles = {
   colors: {
     primary50: "#e4d9fd",
-    primary100: "#c6affc",
-    primary200: "#a281f0",
+    primary100: "#DEDDE2",
+    primary200: "#FF6437",
     primary400: "#3B8AC4",
     primary500: "#313866",
-    primary700: "#50409A", // chủ đạo
-    primary800: "#964EC2",
+    primary700: "#1B1465", // chủ đạo
+    primary800: "#FFFFFF",
     accent500: "#FFE3B3",
     error50: "#fcc4e4",
     error500: "#9b095c",

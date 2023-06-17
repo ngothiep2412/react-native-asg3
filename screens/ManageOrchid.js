@@ -3,7 +3,7 @@ import Button from "../components/UI/Button";
 import IconButton from "../components/UI/IconButton";
 import { GlobalStyles } from "../constants/styles";
 
-function ManageFavorite({ route, navigation }) {
+function ManageOrchid({ route, navigation }) {
   const isEditing = false;
 
   return (
@@ -28,7 +28,7 @@ function ManageFavorite({ route, navigation }) {
   );
 }
 
-export default ManageFavorite;
+export default ManageOrchid;
 
 const styles = StyleSheet.create({
   container: {

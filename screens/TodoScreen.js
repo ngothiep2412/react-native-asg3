@@ -4,22 +4,44 @@ import {
   Dimensions,
   Text,
   Image,
-  TextInput,
   TouchableOpacity,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { LinearGradient } from "expo-linear-gradient";
+import { useNavigation } from "@react-navigation/native";
 
 import { GlobalStyles } from "../constants/styles";
-import { useNavigation } from "@react-navigation/native";
-import OrchidOutput from "../components/OrchidsOutput/OrchidOutput";
 
-function AllOrchidsScreen() {
-  // const navigation = useNavigation();
-  return <OrchidOutput></OrchidOutput>;
+function TodooScreen() {
+  const navigation = useNavigation();
+  return (
+    <View style={styles.container}>
+      <View>
+        <View style={styles.headerContainer}>
+          <TouchableOpacity onPress={navigation.openDrawer}>
+            <Image
+              source={require("../assets/1.png")}
+              style={styles.imageDrawer}
+            />
+          </TouchableOpacity>
+
+          <View style={styles.headerText}>
+            <View style={{ width: "70%" }}>
+              <Text style={styles.textWelcome}>Welcome to</Text>
+              <Text style={styles.textShop}>To do App</Text>
+            </View>
+            <View style={{ width: "30%", alignItems: "flex-end" }}>
+              <Image
+                source={require("../assets/user.jpg")}
+                style={styles.imageUser}
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  );
 }
 
-export default AllOrchidsScreen;
+export default TodooScreen;
 
 const styles = StyleSheet.create({
   container: {
